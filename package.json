@@ -1,0 +1,38 @@
+{
+  "name": "fake-data-source",
+  "version": "1.0.0",
+  "description": "helper functions which can be used to mock rest endpoints.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "test": "mocha --reporter spec",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec"
+  },
+  "keywords": [
+    "mock",
+    "rest",
+    "faker"
+  ],
+  "author": "Hasmukh Suthar <hasmukhsuthar98@gmail.com> (https://github.com/zombierobo)",
+  "repository": {
+    "url": "https://github.com/zombierobo/fake-data-source",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/zombierobo/fake-data-source/issues"
+  },
+  "homepage": "https://github.com/zombierobo/fake-data-source#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/faker": "^4.1.4",
+    "chai": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}
